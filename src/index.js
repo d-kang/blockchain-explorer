@@ -1,6 +1,11 @@
-import hello from './app.js';
-console.log('message:', hello);
+import React from 'react';
+import ReactDOM from 'react-dom';
 
+
+const $root = document.getElementById('root');
+
+
+ReactDOM.render(<div>helloooo world</div>, $root);
 
 if (module.hot) {
 
@@ -12,7 +17,3 @@ if (module.hot) {
     // module or one of its dependencies was just updated
   });
 }
-
-const $body = document.getElementById('root');
-
-$body.append('hello')
