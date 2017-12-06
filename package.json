@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "parcel": "parcel index.html",
+    "parcel:dev": "parcel index.html -p 1337",
+    "parcel:prod": "parcel build src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
 }
