@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "parcel:dev": "parcel index.html -p 1337",
-    "parcel:prod": "parcel build src/index.jsx",
+    "dev": "parcel entry.html -p 1337",
+    "build": "NODE_ENV=production parcel build entry.html --out-dir build --no-minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,5 +17,6 @@
     "blockchain.info": "^2.10.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
-  }
+  },
+  "devDependencies": {}
 }
